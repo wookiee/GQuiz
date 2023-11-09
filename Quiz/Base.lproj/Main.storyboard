@@ -102,7 +102,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ZBp-62-7Zc"/>
-                        <segue destination="Dj6-mE-sIT" kind="relationship" relationship="viewControllers" id="OOF-GG-mMj"/>
+                        <segue destination="yqI-3g-re6" kind="relationship" relationship="viewControllers" id="OOF-GG-mMj"/>
                         <segue destination="Ngh-lw-LQx" kind="relationship" relationship="viewControllers" id="7Fh-a2-kiT"/>
                     </connections>
                 </tabBarController>
@@ -110,7 +110,7 @@
             </objects>
             <point key="canvasLocation" x="95.419847328244273" y="-2.1126760563380285"/>
         </scene>
-        <!--Questions-->
+        <!--Quiz Item Table View Controller-->
         <scene sceneID="mwT-3o-2ko">
             <objects>
                 <tableViewController id="Dj6-mE-sIT" customClass="QuizItemTableViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
@@ -160,9 +160,28 @@
                             <outlet property="delegate" destination="Dj6-mE-sIT" id="PcQ-Jc-lPg"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Questions" image="list.bullet.clipboard" catalog="system" id="C08-m2-h9s"/>
+                    <navigationItem key="navigationItem" id="81s-Ys-42O"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ltq-9G-bla" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2011.4503816793892" y="23.943661971830988"/>
+        </scene>
+        <!--Questions-->
+        <scene sceneID="u9c-er-ssx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yqI-3g-re6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Questions" image="list.bullet.clipboard" catalog="system" id="C08-m2-h9s"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eil-sf-nPB">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Dj6-mE-sIT" kind="relationship" relationship="rootViewController" id="Rve-3U-9h9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="My2-rt-abq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1084.7328244274809" y="23.943661971830988"/>
         </scene>
