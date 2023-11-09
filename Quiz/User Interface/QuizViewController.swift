@@ -6,7 +6,7 @@ class QuizViewController: UIViewController {
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var answerLabel: UILabel!
     
-    let itemStore = QuizItemStore()
+    let itemStore = QuizItemStore.shared
     var currentItem: QuizItem?
     
     @IBAction func handleTappedQuestionButton(_ sender: UIButton) {
