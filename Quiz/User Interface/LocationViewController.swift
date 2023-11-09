@@ -1,5 +1,6 @@
 
 import UIKit
+import CoreLocation
 
 class LocationViewController: UIViewController {
     
@@ -7,6 +8,7 @@ class LocationViewController: UIViewController {
     var locField: UITextField!
     var locButton: UIButton!
     
+    let locationManager = CLLocationManager()
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -34,6 +36,7 @@ class LocationViewController: UIViewController {
     private func addLocButton() {
         let onTapAction = UIAction(title: "Get Location") { [weak self] _ in
             print("We're starting up")
+            self?.startUpdatingLocation()
         }
         locButton = UIButton(type: .system,
                                primaryAction: onTapAction)
@@ -66,6 +69,25 @@ class LocationViewController: UIViewController {
         
         locButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
 
+    }
+    
+    func startUpdatingLocation() {
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+    }
+    
+extension LocationViewController: CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let loc = locations[0]
+        let coord = loc.coordinate
+        locField.text = "(\(coord.latitude) \(coord.longitude))"
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error)
     }
     
 }
