@@ -15,6 +15,7 @@
 		A6AA4F402AFB0CA9006869F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6AA4F3E2AFB0CA9006869F6 /* LaunchScreen.storyboard */; };
 		A6AA4F482AFB1C48006869F6 /* QuizItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AA4F472AFB1C48006869F6 /* QuizItem.swift */; };
 		A6AA4F4A2AFB2042006869F6 /* QuizItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AA4F492AFB2042006869F6 /* QuizItemStore.swift */; };
+		A6AA4F4E2AFB735F006869F6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AA4F4D2AFB735F006869F6 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A6AA4F412AFB0CA9006869F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6AA4F472AFB1C48006869F6 /* QuizItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizItem.swift; sourceTree = "<group>"; };
 		A6AA4F492AFB2042006869F6 /* QuizItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizItemStore.swift; sourceTree = "<group>"; };
+		A6AA4F4D2AFB735F006869F6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,11 @@
 			isa = PBXGroup;
 			children = (
 				A6AA4F372AFB0CA8006869F6 /* QuizViewController.swift */,
+				A6AA4F4D2AFB735F006869F6 /* LoginViewController.swift */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6AA4F4E2AFB735F006869F6 /* LoginViewController.swift in Sources */,
 				A6AA4F382AFB0CA8006869F6 /* QuizViewController.swift in Sources */,
 				A6AA4F4A2AFB2042006869F6 /* QuizItemStore.swift in Sources */,
 				A6AA4F482AFB1C48006869F6 /* QuizItem.swift in Sources */,
