@@ -72,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1068" y="-321"/>
+            <point key="canvasLocation" x="1022" y="-832"/>
         </scene>
         <!--Item-->
         <scene sceneID="aJH-dI-OSG">
@@ -88,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G6r-ts-WKB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1068" y="413"/>
+            <point key="canvasLocation" x="1021" y="807"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="8pd-Ue-7ac">
@@ -102,6 +102,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ZBp-62-7Zc"/>
+                        <segue destination="Dj6-mE-sIT" kind="relationship" relationship="viewControllers" id="OOF-GG-mMj"/>
                         <segue destination="Ngh-lw-LQx" kind="relationship" relationship="viewControllers" id="7Fh-a2-kiT"/>
                     </connections>
                 </tabBarController>
@@ -109,8 +110,65 @@
             </objects>
             <point key="canvasLocation" x="95.419847328244273" y="-2.1126760563380285"/>
         </scene>
+        <!--Questions-->
+        <scene sceneID="mwT-3o-2ko">
+            <objects>
+                <tableViewController id="Dj6-mE-sIT" customClass="QuizItemTableViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="NkW-Hs-iz7">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuizItemCell" rowHeight="73" id="oVp-fx-Pj1" customClass="QuizItemCell" customModule="Quiz" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="393" height="73"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oVp-fx-Pj1" id="J4K-Q7-lfl">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="73"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECF-9G-Ip2">
+                                            <rect key="frame" x="28" y="41" width="345" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Thh-8V-ZxP">
+                                            <rect key="frame" x="28" y="11" width="345" height="21"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Thh-8V-ZxP" firstAttribute="top" secondItem="J4K-Q7-lfl" secondAttribute="topMargin" id="2KA-ey-Eas"/>
+                                        <constraint firstItem="ECF-9G-Ip2" firstAttribute="bottom" secondItem="J4K-Q7-lfl" secondAttribute="bottomMargin" id="6Ku-5c-Qdv"/>
+                                        <constraint firstItem="Thh-8V-ZxP" firstAttribute="trailing" secondItem="J4K-Q7-lfl" secondAttribute="trailingMargin" id="LcL-bz-9Zg"/>
+                                        <constraint firstItem="ECF-9G-Ip2" firstAttribute="leading" secondItem="J4K-Q7-lfl" secondAttribute="leadingMargin" constant="8" id="Riv-Oa-MDI"/>
+                                        <constraint firstItem="ECF-9G-Ip2" firstAttribute="top" secondItem="Thh-8V-ZxP" secondAttribute="bottom" constant="9" id="sar-Kv-zGW"/>
+                                        <constraint firstItem="ECF-9G-Ip2" firstAttribute="trailing" secondItem="J4K-Q7-lfl" secondAttribute="trailingMargin" id="yuI-bG-35O"/>
+                                        <constraint firstItem="Thh-8V-ZxP" firstAttribute="leading" secondItem="J4K-Q7-lfl" secondAttribute="leadingMargin" constant="8" id="zAW-hy-PK2"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="answerLabel" destination="ECF-9G-Ip2" id="iQE-5N-Qse"/>
+                                    <outlet property="questionLabel" destination="Thh-8V-ZxP" id="E2W-Jp-ela"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Dj6-mE-sIT" id="EOV-5X-bQK"/>
+                            <outlet property="delegate" destination="Dj6-mE-sIT" id="PcQ-Jc-lPg"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Questions" image="list.bullet.clipboard" catalog="system" id="C08-m2-h9s"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ltq-9G-bla" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1084.7328244274809" y="23.943661971830988"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="list.bullet.clipboard" catalog="system" width="98" height="128"/>
         <image name="questionmark.bubble" catalog="system" width="128" height="110"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
