@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A699AE932AFC7DB3003E38D9 /* SomeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A699AE922AFC7DB3003E38D9 /* SomeObject.swift */; };
 		A6AA4F342AFB0CA8006869F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AA4F332AFB0CA8006869F6 /* AppDelegate.swift */; };
 		A6AA4F362AFB0CA8006869F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AA4F352AFB0CA8006869F6 /* SceneDelegate.swift */; };
 		A6AA4F382AFB0CA8006869F6 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AA4F372AFB0CA8006869F6 /* QuizViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A699AE922AFC7DB3003E38D9 /* SomeObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SomeObject.swift; path = Quiz/SomeObject.swift; sourceTree = SOURCE_ROOT; };
 		A6AA4F302AFB0CA8006869F6 /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6AA4F332AFB0CA8006869F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6AA4F352AFB0CA8006869F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				A6AA4F372AFB0CA8006869F6 /* QuizViewController.swift */,
 				A6AA4F4D2AFB735F006869F6 /* LocationViewController.swift */,
+				A699AE922AFC7DB3003E38D9 /* SomeObject.swift */,
 			);
 			path = "User Interface";
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				A6AA4F482AFB1C48006869F6 /* QuizItem.swift in Sources */,
 				A6AA4F342AFB0CA8006869F6 /* AppDelegate.swift in Sources */,
 				A6AA4F362AFB0CA8006869F6 /* SceneDelegate.swift in Sources */,
+				A699AE932AFC7DB3003E38D9 /* SomeObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

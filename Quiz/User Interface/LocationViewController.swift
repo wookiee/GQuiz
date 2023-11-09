@@ -78,6 +78,27 @@ class LocationViewController: UIViewController {
         locationManager.startUpdatingLocation()
     }
     
+    func playWithMemory() {
+        let obj1: SomeObject = SomeObject()
+        let obj2: SomeObject = SomeObject()
+        obj1.otherObject = obj2
+        obj2.otherObject = obj1
+        
+        let closure1: ()->Void = { [weak self] in
+            print(self as Any)
+            
+            let closure2: ()->Void = { [weak self] in
+                print(self as Any)
+            }
+            
+            closure2()
+        }
+        
+        closure1()
+    }
+
+}
+
 extension LocationViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
