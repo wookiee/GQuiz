@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Quiz-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="QuizViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
@@ -64,7 +64,7 @@
                             <constraint firstItem="dNh-la-TOV" firstAttribute="top" secondItem="Iw2-bK-Ygf" secondAttribute="bottom" constant="130" id="yNo-GX-pRW"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="questionmark.bubble" catalog="system" id="08F-9Q-eTl"/>
+                    <tabBarItem key="tabBarItem" title="Quiz" image="questionmark.bubble" catalog="system" id="08F-9Q-eTl"/>
                     <connections>
                         <outlet property="answerLabel" destination="dNh-la-TOV" id="qYW-uM-fr0"/>
                         <outlet property="questionLabel" destination="oGr-dH-Wtc" id="lDa-pu-nPl"/>
@@ -77,7 +77,7 @@
         <!--Item-->
         <scene sceneID="aJH-dI-OSG">
             <objects>
-                <viewController id="Ngh-lw-LQx" customClass="LoginViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ngh-lw-LQx" customClass="LocationViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5OA-fi-S4u">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
@@ -96,6 +96,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Ruq-94-REC" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fpo-1G-IFA">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
