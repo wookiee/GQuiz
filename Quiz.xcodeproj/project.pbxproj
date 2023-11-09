@@ -62,9 +62,8 @@
 			children = (
 				A6AA4F332AFB0CA8006869F6 /* AppDelegate.swift */,
 				A6AA4F352AFB0CA8006869F6 /* SceneDelegate.swift */,
-				A6AA4F372AFB0CA8006869F6 /* QuizViewController.swift */,
-				A6AA4F472AFB1C48006869F6 /* QuizItem.swift */,
-				A6AA4F492AFB2042006869F6 /* QuizItemStore.swift */,
+				A6AA4F502AFB73A9006869F6 /* User Interface */,
+				A6AA4F4F2AFB738F006869F6 /* Model */,
 				A6AA4F392AFB0CA8006869F6 /* Main.storyboard */,
 				A6AA4F3C2AFB0CA9006869F6 /* Assets.xcassets */,
 				A6AA4F3E2AFB0CA9006869F6 /* LaunchScreen.storyboard */,
@@ -73,6 +72,19 @@
 			path = Quiz;
 			sourceTree = "<group>";
 		};
+		A6AA4F4F2AFB738F006869F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6AA4F472AFB1C48006869F6 /* QuizItem.swift */,
+				A6AA4F492AFB2042006869F6 /* QuizItemStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6AA4F502AFB73A9006869F6 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				A6AA4F372AFB0CA8006869F6 /* QuizViewController.swift */,
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
